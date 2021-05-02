@@ -1,0 +1,25 @@
+<div class="patientinfo">
+    <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+        <div class="formItem">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" />
+        </div>
+        <div class="formItem">
+            <label for="city">City</label>
+            <input type="text" formControlName="city" />
+        </div>
+        <div class="formItem">
+            <label for="bloodgroup">Bloodgroup</label>
+            <input type="text" formControlName="bloodgroup" />
+        </div>
+        <div class="formItem">
+            <label for="mobile">Mobile</label>
+            <input type="text" formControlName="mobile" />
+        </div>
+        <div class="formItem">
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
+
+<app-dashboard></app-dashboard>
